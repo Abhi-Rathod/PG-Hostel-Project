@@ -1,4 +1,7 @@
 <?php
-$conn = mysqli_connect("mysql-service","root","password","hotel");
+$con = mysqli_connect("mysql-service","root","root","hotel");
 
+if(!$con){
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
